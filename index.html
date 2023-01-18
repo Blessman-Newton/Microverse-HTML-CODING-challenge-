@@ -5,11 +5,48 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Microverse</title>
+	<link rel="stylesheet" href="styles.css">
+	<title>Survey Form</title>
 </head>
 
 <body>
-	<p> Hello World, We are software developers!</p>
+	<div class="container">
+		<div class="col-md-12">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Please provide us a short feedback about your experience with Microverse</p>
+		</div>
+		<div class="col-md-12">
+			<form id="survey-form">
+				<div>
+					<label id="name-label" for="name">Name</label>
+					<br />
+					<input type="text" id="name" name="name" placeholder="Enter your name" value="" required>
+				</div>
+				<div>
+					<label id="email-label" for="email">Email</label>
+					<br />
+					<input type="email" value="" id="email" name="email" placeholder="Enter your email" required>
+				</div>
+				<div>
+					<label id="number-label" for="number">Age</label>
+					<br />
+					<input type="number" value="" id="number" name="number" min="10" max="20"
+						placeholder="Enter your age" required>
+				</div>
+				<div>
+					<label for="dropdown">Which option best describes your current role?</label>
+					<br />
+					<select id="dropdown" name="dropdown">
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="prefer">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+		</div>
+	</div>
 </body>
 
 </html>
